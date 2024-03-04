@@ -73,9 +73,7 @@ include 'header.php';
           <div class="experts-group">
             <div class="experts-item">
               <div class="experts-item-profile">
-              
                 <img src="./images/find-community_1440.png" style='  border-radius: 50%;'>
-            
                 <h3 class="experts-item-profile-name">Abhinandan Trilokia</h3>
                 <p class="experts-item-profile-role">Oragnizer</p>
                 <p class="experts-item-profile-about">
@@ -84,7 +82,6 @@ include 'header.php';
                   <span class="experts-item-profile-description">Android</span>
                 </p>
               </div>
-
               <div>
                 <a
                   class="experts-item-view-profile"
@@ -526,32 +523,6 @@ include 'header.php';
         </nav>
       </div>
     </footer>
-    <script>
-     function redirectToHomePage() {
-          // Change the window location to the desired URL
-          window.location.href = "index.php";
-      }
-      function redirectToDevfest22() {
-          // Change the window location to the desired URL
-          window.location.href = "https://devfest.gdgjammu.com/";
-      }
-      function redirectToAbout() {
-          // Change the window location to the desired URL
-          window.location.href = "https://developers.google.com/community/gdg";
-      }
-       function redirectToWomenTechmaker() {
-          // Change the window location to the desired URL
-          window.location.href = "https://gdg.community.dev/events/details/google-gdg-jammu-presents-international-womens-day-iwd-jammu-2023/";
-      }
-       function redirectToCommunity() {
-          // Change the window location to the desired URL
-          window.location.href = "community.php";
-      }
-      function redirectToRecent() {
-          // Change the window location to the desired URL
-          window.location.href = "recent.php";
-      }
-  </script>
-  </body>
+    <script src="function.js"></script></body>
   
 </html>

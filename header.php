@@ -28,9 +28,9 @@
           <div class="dropdown-item">
             <button class="dropdown-btn learn" onclick="redirectToCommunity()">Empowering Community</button>
           </div>
-          <div class="dropdown-item">
+          <!--<div class="dropdown-item">
             <button class="dropdown-btn learn" onclick="redirectToAbout()">Our Team</button>
-          </div>
+          </div>-->
          <div class="dropdown-item">
             <button class="dropdown-btn learn" onclick="redirectToAbout()">About GDG</button>
           </div>
