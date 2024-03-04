@@ -512,7 +512,7 @@ Reach users looking for your products or services</div>
 include 'footer.php';
 ?>
  
- <script src="function.js"></script>
+ <script src="./function.js"></script>
 </body>
   
 </html>
