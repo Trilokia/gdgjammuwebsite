@@ -479,7 +479,7 @@ include 'header.php';
         </nav>
       </div>
     </footer>
-    <script src="function.js"></script>
-  </body>
+    <script src="./functions.js"></script>
+</body>
   
 </html>

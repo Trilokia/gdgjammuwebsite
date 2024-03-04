@@ -491,7 +491,7 @@ At the end of the program, we will organize a fun challenge for participants to 
         </nav>
       </div>
     </footer>
-    <script src="function.js"></script>
-  </body>
+    <script src="./functions.js"></script>
+</body>
   
 </html>

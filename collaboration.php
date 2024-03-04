@@ -112,7 +112,8 @@ include 'header.php';
 <?php 
 include 'footer.php';
 ?>
- 
+ <script src="./functions.js"></script>
 </body>
+
   
 </html>
