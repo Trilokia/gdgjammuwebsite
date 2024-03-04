@@ -22,9 +22,9 @@
           <div class="dropdown-item">
             <button class="dropdown-btn events" onclick="redirectToRecent()">Recent Events</button>
           </div>
-         <div class="dropdown-item">
+         <!--<div class="dropdown-item">
             <button class="dropdown-btn events" onclick="redirectToCollaboration()">Our Collaboration</button>
-          </div>
+          </div>-->
           <div class="dropdown-item">
             <button class="dropdown-btn learn" onclick="redirectToCommunity()">Empowering Community</button>
           </div>

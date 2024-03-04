@@ -73,7 +73,8 @@ include 'header.php';
           <div class="experts-group">
             <div class="experts-item">
               <div class="experts-item-profile">
-                <img src="./images/find-community_1440.png" style='  border-radius: 50%;'>
+                <img src="./images/find-community_1440.png" style='  border-radius: 50%; width: 100%;
+  height: auto;'>
                 <h3 class="experts-item-profile-name">Abhinandan Trilokia</h3>
                 <p class="experts-item-profile-role">Oragnizer</p>
                 <p class="experts-item-profile-about">
