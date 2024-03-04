@@ -54,7 +54,7 @@ include 'header.php';
 
         <section class="hero">
         <div class="hero-img">
-            <img src="images/colloboration.gif" alt="graphics" style="margin-left:auto;
+            <img src="images/collob.gif" alt="graphics" style="margin-left:auto;
             margin-right: auto;" />
           </div>
           <div class="hero-text">
