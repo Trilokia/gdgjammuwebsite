@@ -339,48 +339,6 @@ include 'header.php';
         </div>
 
       </section>
- <section class="experts-list">
-          <div class="experts-group">
-            <div class="experts-item">
-              <div class="experts-item-profile">
-                <img src="./images/find-community_1440.png" style='  border-radius: 50%; width: 100%;
-  height: auto;'>
-                <h3 class="experts-item-profile-name">Abhinandan Trilokia</h3>
-                <p class="experts-item-profile-role">Oragnizer</p>
-                <p class="experts-item-profile-about">
-                  <span>About myself:</span>
-                  <br/>
-                  <span class="experts-item-profile-description">Android</span>
-                </p>
-              </div>
-              <div>
-                <a
-                  class="experts-item-view-profile"
-                  href="https://www.linkedin.com/in/abhinandantrilokia/"
-                  >View Profile</a
-                >
-              </div>
-            </div>
-
-          
-
-          
-
-            
-          </div>
-        </section>
- 
-        <section class="experts-list">
-          <div class="experts-group">
-         
-
-         
-
-
-           
-          </div>
-        </section>
- 
      
         <section class="experts-list">
 
