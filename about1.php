@@ -360,7 +360,7 @@ Reach users looking for your products or services</p>
           <div class="experts-group">
             <div class="experts-item">
               <div class="experts-item-profile">
-                <div class="experts-item-profile-pic marcos"></div>
+                <div class="experts-item-profile-pic"></div>
                 <h3 class="experts-item-profile-name">Marcos Damasceno</h3>
                 <p class="experts-item-profile-location">Montreal, Canada</p>
                 <p class="experts-item-profile-skills">

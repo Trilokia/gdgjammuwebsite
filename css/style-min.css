@@ -1,0 +1,110 @@
+/*
+---------->>>>>  (Team Section)  <<<<<----------
+*/
+
+
+.team-list {
+  border-bottom: 2px solid #f1f3f4;
+}
+
+.team-group {
+  display: grid;
+  gap: 1.5em;
+}
+
+.team-item,
+.team-item-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-item-profile {
+  padding: 1em;
+}
+
+.team-item-profile-pic {
+  background-image: url('https://lh3.googleusercontent.com/-xIyzsaCKD4Q/AAAAAAAAAAI/AAAAAAABirk/j3JS0-Uhj2Y/s172-c/photo.jpg');
+  background-size: cover;
+}
+
+.team-item-profile-pic.alyssa {
+  background-image: url('https://sfo2.digitaloceanspaces.com/advocu/gde/profile-photos/2020/04/24/045c7d7f410298d0c4c2.jpg');
+  background-size: cover;
+}
+
+
+
+.team-item-profile-pic {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team-item-profile-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  margin-block: 0.5em;
+  margin: 1em 0 1em 0;
+}
+
+.team-item-profile-location, 
+.team-item-profile-role {
+  margin-bottom: 1.5em;
+  text-align: start;
+
+}
+
+.team-item-profile-skills,
+.team-item-profile-about {
+  text-align: center;
+}
+
+.team-item-profile-expertise,
+.team-item-profile-description {
+  color: #808080;
+}
+
+.team-item-view-profile {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 0.875rem;
+  border-radius: 3px;
+  padding: 0.6em 1em;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1em;
+  margin-top: auto;
+}
+
+.team-item-view-profile:hover,
+.team-item-view-profile:focus {
+  background-color: #e8f0fe;
+}
+
+.team-item{
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+}
+
+.team-group {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 490px) {
+  .team-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-item-profile {
+    flex: 1;
+  }
+}

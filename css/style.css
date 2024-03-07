@@ -594,6 +594,7 @@ s
 .cards-item,
 .news-item,
 .experts-item,
+.team-item,
 .social-item {
   border: 1px solid #dadce0;
   border-radius: 10px;
@@ -850,6 +851,165 @@ s
   background-color: #e8f0fe;
 }
 
+/*
+---------->>>>>  (Team Section)  <<<<<----------
+*/
+
+
+.team-list {
+  border-bottom: 2px solid #f1f3f4;
+}
+
+.team-group {
+  display: grid;
+  gap: 1.5em;
+}
+
+.team-item,
+.team-item-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-item-profile {
+  padding: 1em;
+}
+
+.team-item-profile-pic {
+  background-image: url('./img/photo.jpg');
+  background-size: cover;
+}
+
+
+.team-item-profile-pic {
+  background-image: url('https://lh3.googleusercontent.com/-xIyzsaCKD4Q/AAAAAAAAAAI/AAAAAAABirk/j3JS0-Uhj2Y/s172-c/photo.jpg');
+  background-size: cover;
+}
+
+.abhinandan {
+  background-image: url('https://lh3.googleusercontent.com/-xIyzsaCKD4Q/AAAAAAAAAAI/AAAAAAABirk/j3JS0-Uhj2Y/s172-c/photo.jpg');
+  background-size: cover;
+}
+.atul {
+  background-image: url('Assets/Images/Atul\ Sharma.jpeg');
+  background-size: cover;
+}
+.abilasha {
+  background-image: url('Assets/Images/Abilasha\ Gupta.jpg');
+  background-size: cover;
+}
+.aditya {
+  background-image: url('Assets/Images/Aditya\ Kanodia.jpg');
+  background-size: cover;
+}
+.chetna {
+  background-image: url('Assets/Images/Chetna\ Sharma.jpg');
+  background-size: cover;
+}
+.daksh {
+  background-image: url('Assets/Images/Daksh\ Choudhary.jpg');
+  background-size: cover;
+}
+.daljeet {
+  background-image: url('Assets/Images/Daljeet\ Kumar.jpg');
+  background-size: cover;
+}
+.dhruv {
+  background-image: url('Assets/Images/Dhruv\ Gupta.jpg');
+  background-size: cover;
+}
+.harsh {
+  background-image: url('Assets/Images/Harsh\ Vardhan\ Sharma.jpg');
+  background-size: cover;
+}
+.jyotish {
+  background-image: url('Assets/Images/Jyotish\ Kumar.jpg');
+  background-size: cover;
+}
+.mannat {
+  background-image: url('Assets/Images/Mannat\ Abrol.jpg');
+  background-size: cover;
+}
+.nittin {
+  background-image: url('Assets/Images/Nittan\ Sharma.jpg');
+  background-size: cover;
+}
+.raghav {
+  background-image: url('Assets/Images/Raghav\ Sharma.JPG');
+  background-size: cover;
+}
+.satyam {
+  background-image: url('Assets/Images/Satyam\ Pathania.jpg');
+  background-size: cover;
+}
+.sourav {
+  background-image: url('Assets/Images/Sourav\ Mishra.jpg');
+  background-size: cover;
+}
+.vanshu {
+  background-image: url('Assets/Images/Vanshu\ Mehra.png');
+  background-size: cover;
+}
+
+
+
+
+
+.team-item-profile-pic {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team-item-profile-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  margin-block: 0.5em;
+  margin: 1em 0 1em 0;
+}
+
+.team-item-profile-location, 
+.team-item-profile-role {
+  margin-bottom: 1.5em;
+  text-align: start;
+
+}
+
+.team-item-profile-skills,
+.team-item-profile-about {
+  text-align: center;
+}
+
+.team-item-profile-expertise,
+.team-item-profile-description {
+  color: #808080;
+}
+
+.team-item-view-profile {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 0.875rem;
+  border-radius: 3px;
+  padding: 0.6em 1em;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1em;
+  margin-top: auto;
+}
+
+.team-item-view-profile:hover,
+.team-item-view-profile:focus {
+  background-color: #e8f0fe;
+}
 
 /*
 ---------->>>>>  (Experts Section)  <<<<<----------
@@ -1261,6 +1421,16 @@ s
 }
 
 @media (min-width: 490px) {
+  .team-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-item-profile {
+    flex: 1;
+  }
+}
+
+@media (min-width: 490px) {
   .social-group {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1538,6 +1708,9 @@ s
   }
 
   .experts-group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .team-group {
     grid-template-columns: repeat(4, 1fr);
   }
   .social-group {
