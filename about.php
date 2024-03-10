@@ -48,33 +48,26 @@ include 'header.php';
       <?php include 'banner.php';?>
 
 
-        <section class="hero" style="border-bottom: 1px solid black;
-    padding-bottom: 36px;">
-       
-          <div class="hero-text">
-            <h3 class="hero-text-title">
-         Our Team
-
-            </h3>
-            <p class="hero-text-body">
-            We are more powerful when we empower each other.
-            </p>
-            
-          </div>
-          <div class="hero-img">
-            <img src="./images/solutions-hero_1440.png" alt="graphics" style="margin-left:auto;
-            margin-right: auto;" />
-          </div>
-        </section>
+      
+      <section style="border-bottom: 0px; gap: 1em;
+    align-items: center">
+                    <img src="./images/team_header.png" style="border-radius: 10px;" />
+          </section>
    
         <!-- ------------------------  Team Section  ------------------------ -->
         <section class="team-list">
+    
+          <h1 class="products-title" style="margin: 2rem;">
+          Organizing  <span class="highlight">Team</span>
+          </h1>
+        
         <div class="team-group">
           <div class="team-item">
             <div class="team-item-profile">
               <div class="team-item-profile-pic abhinandan"></div>
               <h3 class="team-item-profile-name">Abhinandan Trilokia</h3>
-              <p class="team-item-profile-role">Organizer, GDG Jammu</p>
+              
+              <p class="team-item-profile-role chip">Organizer, GDG Jammu</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -91,7 +84,7 @@ include 'header.php';
             <div class="team-item-profile">
               <div class="team-item-profile-pic atul"></div>
               <h3 class="team-item-profile-name">Atul Sharma</h3>
-              <p class="team-item-profile-role">Co-Organizer, GDG Jammu</p>
+              <p class="team-item-profile-role chip">Co-Organizer, GDG Jammu</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -105,9 +98,140 @@ include 'header.php';
           </div>
           <div class="team-item">
             <div class="team-item-profile">
+              <div class="team-item-profile-pic chetna"></div>
+              <h3 class="team-item-profile-name">Chetna Sharma</h3>
+              <p class="team-item-profile-role chip">WTM Lead, GDG Jammu</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">ServiceNow Developer | Actively looking for new ServiceNow
+                  Developer Opportunities across India</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/chetna-sharma-48720a147/">View
+                Profile</a>
+            </div>
+          </div>
+          </div>
+          <h1 class="products-title" style="margin: 2rem;">
+           Core <span class="highlight">Team</span>
+          </h1>
+          <div class="team-group">
+         
+          <div class="team-item">
+            <div class="team-item-profile">
+              <div class="team-item-profile-pic daljeet"></div>
+              <h3 class="team-item-profile-name">Daljeet Kumar</h3>
+              <p class="team-item-profile-role chip">Content Creator, Community Moderator</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">Experienced Web Developer with a demonstrated history of
+                  working in the computer software industry. Skilled in Mobile Applications, Algorithms, Graphic Design,
+                  Web Design, and Adobe Photoshop.</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/daljeetkumar/">View Profile</a>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-profile">
+              <div class="team-item-profile-pic dhruv"></div>
+              <h3 class="team-item-profile-name">Dhruv Gupta</h3>
+              <p class="team-item-profile-role chip">Outreach & Partnerships Manager</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">Versatile and results-driven ECE Engineer with a proven
+                  history of spearheading complex projects from conception to fruition.</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/dhruv-gupta-95847a226/">View
+                Profile</a>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-profile">
+              <div class="team-item-profile-pic mannat"></div>
+              <h3 class="team-item-profile-name">Mannat Abrol</h3>
+              <p class="team-item-profile-role chip">Event Coordinator, Speaker</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">Nurturing skills as a computer science student.
+                  Enthusiastic in seek of learning new skills</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/mannat-abrol-4b1630202/">View
+                Profile</a>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-profile">
+              <div class="team-item-profile-pic raghav"></div>
+              <h3 class="team-item-profile-name">Raghav Sharma</h3>
+              <p class="team-item-profile-role chip">Community Relations & Event Manager</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">Actively engaged in diverse communities, taking on
+                  leadership roles, and showcasing my passion as a skilled Full Stack Web Developer and proficient
+                  Graphic Designer. Greatness is Coming.</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/im-raghav-sharma-/">View Profile</a>
+            </div>
+          </div>
+         
+         
+       
+          <div class="team-item">
+            <div class="team-item-profile">
+              <div class="team-item-profile-pic satyam"></div>
+              <h3 class="team-item-profile-name">Satyam Pathania</h3>
+              <p class="team-item-profile-role chip">Content Writer, Community Moderator</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">Cybersecurity enthusiast and ethical hacker with the
+                  ambition of becoming an security engineer.</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/satyam-pathania/">View Profile</a>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-profile">
+              <div class="team-item-profile-pic sourav"></div>
+              <h3 class="team-item-profile-name">Sourav Mishra</h3>
+              <p class="team-item-profile-role chip">Community Moderator, Speaker</p>
+              <p class="team-item-profile-about">
+                <span>About myself</span>
+                <br />
+                <span class="team-item-profile-description">Seeking a position in an organization that will allow me to
+                  use my abilities and skills for the betterment of that organization, as well as my own. Towards Greatness.</span>
+              </p>
+            </div>
+            <div>
+              <a class="team-item-view-profile" href="https://www.linkedin.com/in/souravvmishra/">View Profile</a>
+            </div>
+          </div>
+          </div>
+          <h1 class="products-title" style="margin: 2rem;">
+           Volunteer <span class="highlight">Team</span>
+          </h1>
+          <div class="team-group">
+          <div class="team-item">
+            <div class="team-item-profile">
               <div class="team-item-profile-pic aditya"></div>
               <h3 class="team-item-profile-name">Aditya Kanodia</h3>
-              <p class="team-item-profile-role">Speaker</p>
+              <p class="team-item-profile-role chip">Volunteer</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -123,7 +247,7 @@ include 'header.php';
             <div class="team-item-profile">
               <div class="team-item-profile-pic abilasha"></div>
               <h3 class="team-item-profile-name">Abilasha Gupta</h3>
-              <p class="team-item-profile-role">Volunteer</p>
+              <p class="team-item-profile-role chip">Volunteer</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -137,60 +261,9 @@ include 'header.php';
           </div>
           <div class="team-item">
             <div class="team-item-profile">
-              <div class="team-item-profile-pic chetna"></div>
-              <h3 class="team-item-profile-name">Chetna Sharma</h3>
-              <p class="team-item-profile-role">WTM Lead, GDG Jammu</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">ServiceNow Developer | Actively looking for new ServiceNow
-                  Developer Opportunities across India</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/chetna-sharma-48720a147/">View
-                Profile</a>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-item-profile">
-              <div class="team-item-profile-pic daljeet"></div>
-              <h3 class="team-item-profile-name">Daljeet Kumar</h3>
-              <p class="team-item-profile-role">Graphic Designer</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">Experienced Web Developer with a demonstrated history of
-                  working in the computer software industry. Skilled in Mobile Applications, Algorithms, Graphic Design,
-                  Web Design, and Adobe Photoshop.</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/daljeetkumar/">View Profile</a>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-item-profile">
-              <div class="team-item-profile-pic raghav"></div>
-              <h3 class="team-item-profile-name">Raghav Sharma</h3>
-              <p class="team-item-profile-role">Community Relations Manager</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">Actively engaged in diverse communities, taking on
-                  leadership roles, and showcasing my passion as a skilled Full Stack Web Developer and proficient
-                  Graphic Designer. Greatness is Coming.</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/im-raghav-sharma-/">View Profile</a>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-item-profile">
               <div class="team-item-profile-pic daksh"></div>
               <h3 class="team-item-profile-name">Daksh Choudhary</h3>
-              <p class="team-item-profile-role">Volunteer</p>
+              <p class="team-item-profile-role chip">Volunteer</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -202,28 +275,12 @@ include 'header.php';
               <a class="team-item-view-profile" href="https://www.linkedin.com/in/dakshchoudhary/">View Profile</a>
             </div>
           </div>
-          <div class="team-item">
-            <div class="team-item-profile">
-              <div class="team-item-profile-pic dhruv"></div>
-              <h3 class="team-item-profile-name">Dhruv Gupta</h3>
-              <p class="team-item-profile-role">Marketing/Sponsor</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">Versatile and results-driven ECE Engineer with a proven
-                  history of spearheading complex projects from conception to fruition.</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/dhruv-gupta-95847a226/">View
-                Profile</a>
-            </div>
-          </div>
+         
           <div class="team-item">
             <div class="team-item-profile">
               <div class="team-item-profile-pic harsh"></div>
               <h3 class="team-item-profile-name">Harsh Vardhan Sharma</h3>
-              <p class="team-item-profile-role">Volunteers</p>
+              <p class="team-item-profile-role chip">Volunteers</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -241,7 +298,7 @@ include 'header.php';
             <div class="team-item-profile">
               <div class="team-item-profile-pic jyotish"></div>
               <h3 class="team-item-profile-name">Jyotish Kumar Jha</h3>
-              <p class="team-item-profile-role">Web Developer</p>
+              <p class="team-item-profile-role chip">Volunteer</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -254,28 +311,12 @@ include 'header.php';
                 Profile</a>
             </div>
           </div>
-          <div class="team-item">
-            <div class="team-item-profile">
-              <div class="team-item-profile-pic mannat"></div>
-              <h3 class="team-item-profile-name">Mannat Abrol</h3>
-              <p class="team-item-profile-role">Speaker</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">NURTURING SKILLS AS A COMPUTER SCIENCE STUDENT"ll
-                  ENTHUSIASTIC|| IN SEEK OF LEARNING NEW SKILLS</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/mannat-abrol-4b1630202/">View
-                Profile</a>
-            </div>
-          </div>
+         
           <div class="team-item">
             <div class="team-item-profile">
               <div class="team-item-profile-pic nittin"></div>
               <h3 class="team-item-profile-name">Nittin Sharma</h3>
-              <p class="team-item-profile-role">Technical Lead</p>
+              <p class="team-item-profile-role chip">Volunteer</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -287,43 +328,13 @@ include 'header.php';
               <a class="team-item-view-profile" href="https://www.linkedin.com/in/nittindeveloper/">View Profile</a>
             </div>
           </div>
-          <div class="team-item">
-            <div class="team-item-profile">
-              <div class="team-item-profile-pic satyam"></div>
-              <h3 class="team-item-profile-name">Satyam Pathania</h3>
-              <p class="team-item-profile-role">Content Writer</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">Cybersecurity enthusiast and ethical hacker with the
-                  ambition of becoming an security engineer.</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/satyam-pathania/">View Profile</a>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-item-profile">
-              <div class="team-item-profile-pic sourav"></div>
-              <h3 class="team-item-profile-name">Sourav Mishra</h3>
-              <p class="team-item-profile-role">Web Developer</p>
-              <p class="team-item-profile-about">
-                <span>About myself</span>
-                <br />
-                <span class="team-item-profile-description">Seeking a position in an organization that will allow me to
-                  use my abilities and skills for the betterment of that organization, as well as my own. Towards Greatness.</span>
-              </p>
-            </div>
-            <div>
-              <a class="team-item-view-profile" href="https://www.linkedin.com/in/souravvmishra/">View Profile</a>
-            </div>
-          </div>
+         
+         
           <div class="team-item">
             <div class="team-item-profile">
               <div class="team-item-profile-pic vanshu"></div>
               <h3 class="team-item-profile-name">Vanshu Mehra</h3>
-              <p class="team-item-profile-role">Management Volunteer</p>
+              <p class="team-item-profile-role chip">Management</p>
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
@@ -335,101 +346,19 @@ include 'header.php';
               <a class="team-item-view-profile" href="https://www.linkedin.com/in/vanshumehra/">View Profile</a>
             </div>
           </div>
-
+       
         </div>
 
       </section>
      
-        <section class="experts-list">
+      
 
-          <section class="hero" style="border-bottom: 0px;">
-          
-          <div class="hero-img1">
-          <a href="#">
-                    <img src="./images/explore-your-interests_1440.jpg" style="border-radius: 10px;" />
-                  </a>
-           
-          
-          </div>
-          <div class="hero-text1">
-
-                <div class="news-item-description">
-                <span class=""><img alt="" src="./images/explore-interests-eyebrow.svg"></span>
-                <div class="news-item-description-body">
-                  <h3>
-                    <a
-                      class="news-item-description-title" style="font: 700 40px 'Google Sans', sans-serif; color:black;"
-                      href="#"
-                      >Request an event</a
-                    >
-                  </h3>
-                  <div class="news-item-description-content">
-                  Grow your knowledge through online and in-person developer events.
-                  </div>
-                  <a class="cards-item-cta" href="https://forms.gle/kkWxJ2TTghaaGvQX8" target="_blank">Invite us</a>
-               
-          </div> </div> </div>
-          </section>
+      
 
 
-          <section class="hero" style="border-bottom: 0px;">
-          <div class="hero-img">
-          <a href="#">
-                    <img src="./images/technical-skills_1440.jpg" style="border-radius: 10px;" />
-                  </a>
-           
-          
-          </div>
-          <div class="hero-text">
-
-                <div class="news-item-description">
-                <span class=""><img alt="" src="./images/technical-skills-eyebrow.svg"></span>
-                <div class="news-item-description-body">
-                  <h3>
-                    <a
-                      class="news-item-description-title" style="font: 700 40px 'Google Sans', sans-serif; color:black;"
-                      href="#"
-                      >Share your story</a
-                    >
-                  </h3>
-                  <div class="news-item-description-content">
-                  Develop something cool with Google technology. Sharpen skills and master new ones.
-                  </div>
-                  <a class="cards-item-cta" href="https://bit.ly/GDGJammuBeTheInspiration" target="_blank">Be the inspiration</a>
-               
-          </div> </div> </div>
-
-</section>
-
-
-<section class="hero">
-          
-          <div class="hero-img1">
-          <a href="#">
-                    <img src="./images/find-community_1440.png" style="border-radius: 10px;" />
-                  </a>
-           
-          
-          </div>
-          <div class="hero-text1">
-
-                <div class="news-item-description">
-                <span class=""><img alt="" src="./images/find-community-eyebrow.svg"></span>
-                <div class="news-item-description-body">
-                  <h3>
-                    <a
-                      class="news-item-description-title" style="font: 700 40px 'Google Sans', sans-serif; color:black;"
-                      href="#"
-                      >Join our team</a
-                    >
-                  </h3>
-                  <div class="news-item-description-content">
-                  Meet a diverse network, no matter where you are on your developer journey.
-                  </div>
-                  <a class="cards-item-cta" href="https://bit.ly/GDGJammuCallForTeam" target="_blank">Become part of team</a>
-               
-          </div> </div> </div>
-          </section>
+      <h1 class="products-title" style="margin: 2rem;">
+      <span class="highlight">Follow GDG Jammu </span>
+          </h1>
          
     <!-- ------------------------  Social Section  ------------------------ -->
     <section class="social-list">

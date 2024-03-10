@@ -505,6 +505,80 @@ Reach users looking for your products or services</div>
     </div>
   </div>
   </section>
+  <h1 class="products-title" style="margin: 2rem;">
+      <span class="highlight">Follow GDG Jammu </span>
+          </h1>
+
+    <section class="social-list">
+          <div class="social-group">
+            <div class="social-item">
+           
+              <div class="social-item-profile">
+                     
+                <img class="social-row-item-icon" alt="" src="./images/yt.svg" loading="lazy">
+        
+                <h3 class="social-item-profile-name">YouTube</h3>
+                <p class="social-item-profile-location">
+                  Subscribe to join a community of creative developers and learn the latest in Google technology.
+                </p>
+                <a class="social-cta" href="https://www.youtube.com/@gdgjammu">Learn More</a>
+              </div>
+              <div>
+                
+              </div>
+            </div>
+
+            <div class="social-item">
+           
+              <div class="social-item-profile">
+                     
+                <img class="social-row-item-icon" alt="" src="./images/ig.webp" loading="lazy">
+        
+                <h3 class="social-item-profile-name">Instagram</h3>
+                <p class="social-item-profile-location">
+                  Follow and discover developer resources, community events, and inspirational stories.
+                </p>
+                <a class="social-cta" href="https://www.instagram.com/gdgjammu/">Learn More</a>
+              </div>
+              <div>
+                
+              </div>
+            </div>
+            <div class="social-item">
+           
+              <div class="social-item-profile">
+                     
+                <img class="social-row-item-icon" alt="" src="./images/li_96.png" loading="lazy">
+        
+                <h3 class="social-item-profile-name">LinkedIn</h3>
+                <p class="social-item-profile-location">
+                  Join a community of creative developers and learn how to use the latest in technology.
+                </p>
+                <a class="social-cta" href="https://www.linkedin.com/company/gdgjammu">Learn More</a>
+              </div>
+              <div>
+                
+              </div>
+            </div>
+            <div class="social-item">
+           
+              <div class="social-item-profile">
+                     
+                <img class="social-row-item-icon" alt="" src="./images/x.svg"  loading="lazy">
+        
+                <h3 class="social-item-profile-name">X</h3>
+                <p class="social-item-profile-location">
+                  Join the conversation to discover the latest developer resources, events, and announcements.
+                </p>
+                <a class="social-cta" href="https://twitter.com/GDGJammu">Learn More</a>
+              </div>
+              <div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+    
       </div>
     </main>
 

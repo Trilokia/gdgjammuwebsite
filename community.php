@@ -66,8 +66,125 @@ include 'header.php';
             margin-right: auto;" />
           </div>
         </section>
-   
+        <h1 class="products-title" style="margin: 2rem;">
+        Getting<span class="highlight"> Started</span>
+          </h1>
        
+        <section class="cards-list">
+          <div class="cards-group">
+            <div class="cards-item">
+          
+
+              <div class="cards-item-description" style=" justify-content: space-between; padding:1rem;  align-items: center;" >
+                <div class="cards-item-description-body" style="min-height: 0px;">
+                  <h3>
+                    <a class="cards-item-description-title" style="color:black; " href="#"><b>Mobile</b></a>
+                  </h3>
+                  <div class="cards-item-description-content">
+                  Develop for a range of audiences and form factors.
+                  </div>
+                  <a
+                    class="cards-item-cta" style="    background-color: var(--primary-button-color);color: var(--primary-white);"
+                    href="https://developers.google.com/events"
+                    target="_blank"
+                    >Get started</a
+                  >
+                </div>
+                <img
+                      src="https://developers.google.com/static/homepage-assets/images/ecosystem-mobile.svg"
+                      alt="card background" style="max-height: 105px;
+    max-width: 155px;"
+                    />
+                </div>
+             
+             
+            </div>
+
+            <div class="cards-item">
+          
+
+          <div class="cards-item-description" style=" justify-content: space-between; padding:1rem; align-items: center;" >
+            <div class="cards-item-description-body" style="min-height: 0px;">
+              <h3>
+                <a class="cards-item-description-title" style="color:black;" href="#"><b>Web</b></a>
+              </h3>
+              <div class="cards-item-description-content">
+              Create fast, secure sites and apps for the open web.
+              </div>
+              <a
+                class="cards-item-cta" style="    background-color: var(--primary-button-color);color: var(--primary-white);"
+                href="https://developers.google.com/events"
+                target="_blank"
+                >Get started</a
+              >
+            </div>
+            <img
+                  src="https://developers.google.com/static/homepage-assets/images/ecosystem-web.svg"
+                  alt="card background" style="max-height: 105px;
+    max-width: 155px;"
+                />
+            </div>
+         
+         
+        </div>
+        <div class="cards-item">
+          
+
+          <div class="cards-item-description" style=" justify-content: space-between; padding:1rem; align-items: center;" >
+            <div class="cards-item-description-body" style="min-height: 0px;">
+              <h3>
+                <a class="cards-item-description-title" style="color:black;" href="#"><b>AI</b></a>
+              </h3>
+              <div class="cards-item-description-content">
+              Bring the power of machine learning to apps and workflows.
+              </div>
+              <a
+                class="cards-item-cta" style="    background-color: var(--primary-button-color);color: var(--primary-white);"
+                href="https://developers.google.com/events"
+                target="_blank"
+                >Get started</a
+              >
+            </div>
+            <img
+                  src="https://developers.google.com/static/homepage-assets/images/ecosystem-ai.svg"
+                  alt="card background" style="max-height: 105px;
+    max-width: 155px;"
+                />
+            </div>
+         
+         
+        </div>
+        <div class="cards-item">
+          
+
+          <div class="cards-item-description" style=" justify-content: space-between; padding:1rem; align-items: center;" >
+            <div class="cards-item-description-body" style="min-height: 0px;">
+              <h3>
+                <a class="cards-item-description-title" style="color:black;" href="#"><b>Cloud</b></a>
+              </h3>
+              <div class="cards-item-description-content">
+              Simplify and scale end-to-end development.
+
+              </div>
+              <a
+                class="cards-item-cta" style="    background-color: var(--primary-button-color);color: var(--primary-white);"
+                href="https://developers.google.com/events"
+                target="_blank"
+                >Get started</a
+              >
+            </div>
+            <img
+                  src="https://developers.google.com/static/homepage-assets/images/ecosystem-cloud.svg"
+                  alt="card background" style="max-height: 105px;
+    max-width: 155px;"
+                />
+            </div>
+         
+         
+        </div>
+        
+          </div>
+        </section>
 
           <section class="hero" style="border-bottom: 0px;">
           
@@ -157,7 +274,9 @@ include 'header.php';
                
           </div> </div> </div>
           </section>
-         
+          <h1 class="products-title" style="margin: 2rem;">
+      <span class="highlight">Follow GDG Jammu </span>
+          </h1>
     <!-- ------------------------  Experts List Section  ------------------------ -->
     <section class="social-list">
           <div class="social-group">

@@ -26,3 +26,7 @@ function redirectToHomePage() {
      // Change the window location to the desired URL
      window.location.href = "recent.php";
  }
+ function redirectToTeam() {
+    // Change the window location to the desired URL
+    window.location.href = "about.php";
+}

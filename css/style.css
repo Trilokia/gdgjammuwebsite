@@ -189,6 +189,16 @@ header {
   transform: translateX(-100%);
 }
 
+.chip {
+  display: inline-block;
+  padding: 0 16px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -890,7 +900,7 @@ s
 }
 
 .abhinandan {
-  background-image: url('https://lh3.googleusercontent.com/-xIyzsaCKD4Q/AAAAAAAAAAI/AAAAAAABirk/j3JS0-Uhj2Y/s172-c/photo.jpg');
+  background-image: url('Assets/Images/Trilokia.JPG');
   background-size: cover;
 }
 .atul {
