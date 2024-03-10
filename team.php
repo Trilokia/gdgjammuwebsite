@@ -71,8 +71,7 @@ include 'header.php';
               <p class="team-item-profile-about">
                 <span>About myself</span>
                 <br />
-                <span class="team-item-profile-description">I am a results-driven software developer with a Master of
-                  Computer Applications from the University of Jammu.
+                <span class="team-item-profile-description">A seasoned Android developer with 5+ years, top-rated apps, 10M+ downloads. Active in startups, mentors at GDG Jammu
                 </span>
               </p>
             </div>
