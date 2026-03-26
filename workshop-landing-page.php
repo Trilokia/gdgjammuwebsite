@@ -46,6 +46,7 @@
 
   <main>
     <div class="container">
+          <?php include 'banner.php';?>
 
       <!-- ========================  HERO SECTION  ======================== -->
 
@@ -110,7 +111,7 @@
       <!-- ========================  TOOLS  ======================== -->
 
       <hr class="ws-divider">
-      <section class="ws-sec" id="tools" data-reveal>
+      <section class="ws-sec ws-sec--alt" id="tools" data-reveal>
         <div class="ws-sec__label">Tools</div>
         <h2 class="ws-sec__title">What we'll use</h2>
         <p class="ws-sec__desc">Two Google tools that let you build production-grade apps with AI — no boilerplate, no
@@ -197,7 +198,7 @@
             <div class="ws-check-info">
               <strong>Claim Free Google Cloud Credits</strong>
               <span>Redeem before the workshop — </span>
-              <a href="__link__" target="_blank" rel="noopener">Claim credits</a>
+              <a href="https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd" target="_blank" rel="noopener">Claim credits</a>
             </div>
           </div>
           <div class="ws-check-item" onclick="this.classList.toggle('done')">
@@ -219,7 +220,7 @@
       <!-- ========================  QR CODES / QUICK LINKS  ======================== -->
 
       <hr class="ws-divider">
-      <section class="ws-sec" id="links" data-reveal>
+      <section class="ws-sec ws-sec--alt" id="links" data-reveal>
         <div class="ws-sec__label">Quick access</div>
         <h2 class="ws-sec__title">Scan or click</h2>
         <p class="ws-sec__desc">Use these QR codes on the projector — attendees can scan directly from their seats.</p>
@@ -228,8 +229,8 @@
           <div class="ws-qr-card">
             <div class="ws-qr-card__label" style="color:var(--g-blue)">Starter Repo</div>
             <div class="ws-qr-card__code" id="qr-repo"></div>
-            <div class="ws-qr-card__link">github.com/gdgjammu/build-with-ai-portfolio</div>
-            <a href="https://github.com/gdgjammu/build-with-ai-portfolio" target="_blank"
+            <div class="ws-qr-card__link">github.com/GDG-Jammu/build-with-ai-portfolio</div>
+            <a href="https://github.com/GDG-Jammu/build-with-ai-portfolio" target="_blank"
               class="ws-qr-card__btn ws-qr-card__btn--primary">Fork Repository</a>
           </div>
 
@@ -244,14 +245,14 @@
             <div class="ws-qr-card__label" style="color:var(--g-yellow)">Cloud Credits</div>
             <div class="ws-qr-card__code" id="qr-credits"></div>
             <div class="ws-qr-card__link">Free Google Cloud credits for attendees</div>
-            <a href="__link__" target="_blank" class="ws-qr-card__btn">Claim Credits</a>
+            <a href="https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd" target="_blank" class="ws-qr-card__btn">Claim Credits</a>
           </div>
 
           <div class="ws-qr-card">
             <div class="ws-qr-card__label" style="color:var(--g-red)">Profile Badge</div>
             <div class="ws-qr-card__code" id="qr-badge"></div>
             <div class="ws-qr-card__link">Build with AI — Google Developer Profile badge</div>
-            <a href="__redemption link__" target="_blank" class="ws-qr-card__btn">Claim Badge</a>
+            <a href="http://goo.gle/bwai-attendee-2026" target="_blank" class="ws-qr-card__btn">Claim Badge</a>
           </div>
         </div>
       </section>
@@ -310,7 +311,7 @@
       <!-- ========================  WHAT YOU'LL LEARN  ======================== -->
 
       <hr class="ws-divider">
-      <section class="ws-sec" data-reveal>
+      <section class="ws-sec ws-sec--alt" data-reveal>
         <div class="ws-sec__label">Skills</div>
         <h2 class="ws-sec__title">What you'll learn</h2>
         <div class="ws-learn-grid">
@@ -398,7 +399,7 @@
             Add an official Google Developer badge to your profile. Share it on LinkedIn, your resume, and your new
             portfolio.
           </p>
-          <a href="__redemption link__" target="_blank" class="ws-badge-cta__btn">
+          <a href="http://goo.gle/bwai-attendee-2026" target="_blank" class="ws-badge-cta__btn">
             Claim Badge on Google Developer Profile
           </a>
         </div>
@@ -408,7 +409,7 @@
       <!-- ========================  RESOURCES  ======================== -->
 
       <hr class="ws-divider">
-      <section class="ws-sec" data-reveal>
+      <section class="ws-sec ws-sec--alt" data-reveal>
         <div class="ws-sec__label">Resources</div>
         <h2 class="ws-sec__title">Keep learning</h2>
         <div class="ws-learn-grid">
@@ -464,13 +465,12 @@
     // Generate QR codes
     const qrOpts = { width: 140, height: 140, colorDark: '#202124', colorLight: '#fff', correctLevel: QRCode.CorrectLevel.M };
 
-    new QRCode(document.getElementById('qr-repo'), { ...qrOpts, text: 'https://github.com/gdgjammu/build-with-ai-portfolio' });
+    new QRCode(document.getElementById('qr-repo'), { ...qrOpts, text: 'https://github.com/GDG-Jammu/build-with-ai-portfolio' });
     new QRCode(document.getElementById('qr-antigravity'), { ...qrOpts, text: 'https://antigravity.google/download' });
-    new QRCode(document.getElementById('qr-credits'), { ...qrOpts, text: '__link__' });
-    new QRCode(document.getElementById('qr-badge'), { ...qrOpts, text: '__redemption link__' });
+    new QRCode(document.getElementById('qr-credits'), { ...qrOpts, text: 'https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd' });
+    new QRCode(document.getElementById('qr-badge'), { ...qrOpts, text: 'http://goo.gle/bwai-attendee-2026' });
   </script>
 
 </body>
 
 </html>
-w-
