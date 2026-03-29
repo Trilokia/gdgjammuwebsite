@@ -46,7 +46,7 @@
 
   <main>
     <div class="container">
-          <?php include 'banner.php';?>
+      <?php include 'banner.php'; ?>
 
       <!-- ========================  HERO SECTION  ======================== -->
 
@@ -198,7 +198,8 @@
             <div class="ws-check-info">
               <strong>Claim Free Google Cloud Credits</strong>
               <span>Redeem before the workshop — </span>
-              <a href="https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd" target="_blank" rel="noopener">Claim credits</a>
+              <a href="https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd" target="_blank"
+                rel="noopener">Claim credits</a>
             </div>
           </div>
           <div class="ws-check-item" onclick="this.classList.toggle('done')">
@@ -245,7 +246,8 @@
             <div class="ws-qr-card__label" style="color:var(--g-yellow)">Cloud Credits</div>
             <div class="ws-qr-card__code" id="qr-credits"></div>
             <div class="ws-qr-card__link">Free Google Cloud credits for attendees</div>
-            <a href="https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd" target="_blank" class="ws-qr-card__btn">Claim Credits</a>
+            <a href="https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd" target="_blank"
+              class="ws-qr-card__btn">Claim Credits</a>
           </div>
 
           <div class="ws-qr-card">
@@ -388,20 +390,35 @@
         </div>
       </section>
 
-
-      <!-- ========================  BADGE CTA  ======================== -->
+      <!-- ========================  SUBMIT PORTFOLIO  ======================== -->
 
       <hr class="ws-divider">
-      <section class="ws-sec" id="badge" data-reveal>
+      <section class="ws-sec ws-sec--alt" id="submit" data-reveal>
         <div class="ws-badge-cta">
-          <h2 class="ws-badge-cta__title">Claim your Build with AI badge</h2>
+          <div class="ws-sec__label">Showcase</div>
+          <h2 class="ws-badge-cta__title">Submit your portfolio</h2>
           <p class="ws-badge-cta__desc">
-            Add an official Google Developer badge to your profile. Share it on LinkedIn, your resume, and your new
-            portfolio.
+            Built your portfolio? Awesome! Submit it to the community showcase and let everyone see what you've created.
+            Your site will appear on the GDG Jammu showcase wall alongside other attendees.
           </p>
-          <a href="http://goo.gle/bwai-attendee-2026" target="_blank" class="ws-badge-cta__btn">
-            Claim Badge on Google Developer Profile
-          </a>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+            <a href="https://forms.gle/r2nYcubC8y3DZ6MUA" target="_blank" class="ws-badge-cta__btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
+                style="vertical-align:middle; margin-right:6px;">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+              Submit Your Portfolio
+            </a>
+            <a href="./showcase.php" class="ws-badge-cta__btn"
+              style="background:transparent; border:2px solid var(--link-color); color:var(--link-color);">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
+                style="vertical-align:middle; margin-right:6px;">
+                <path
+                  d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+              </svg>
+              View Community Showcase
+            </a>
+          </div>
         </div>
       </section>
 
