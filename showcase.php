@@ -226,6 +226,14 @@
             '<div class="sc-card__preview-placeholder" style="display:none;">' +
               '<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>' +
             '</div>' +
+            '<div class="sc-card__namebar">' +
+              '<div class="sc-card__avatar sc-card__avatar--bar">' +
+                (avatarUrl
+                  ? '<img src="' + avatarUrl + '" alt="' + entry.name + '" onerror="this.remove();this.parentNode.textContent=\'' + initials + '\'">'
+                  : initials) +
+              '</div>' +
+              '<span class="sc-card__name sc-card__name--bar">' + escapeHtml(entry.name) + '</span>' +
+            '</div>' +
           '</div>' +
           '<div class="sc-card__body">' +
             '<div class="sc-card__author">' +
@@ -292,26 +300,42 @@
           }
         });
 
-        // 3. Theme card with a color derived from username (instant, no CORS issues)
-        var palette = [
-          { r: 66, g: 133, b: 244 },   // Google Blue
-          { r: 234, g: 67, b: 53 },    // Google Red
-          { r: 52, g: 168, b: 83 },    // Google Green
-          { r: 251, g: 188, b: 4 },    // Google Yellow
-          { r: 171, g: 71, b: 188 },   // Purple
-          { r: 0, g: 172, b: 193 },    // Teal
-          { r: 255, g: 112, b: 67 },   // Deep Orange
-          { r: 63, g: 81, b: 181 },    // Indigo
-        ];
-        if (username) {
-          var hash = 0;
-          for (var i = 0; i < username.length; i++) hash = ((hash << 5) - hash + username.charCodeAt(i)) | 0;
-          var color = palette[Math.abs(hash) % palette.length];
-          var tint = 'rgba(' + color.r + ',' + color.g + ',' + color.b;
-          card.style.background = 'linear-gradient(135deg, ' + tint + ',0.07) 0%, ' + tint + ',0.02) 100%)';
-          card.style.borderColor = tint + ',0.2)';
-          var bodyEl = card.querySelector('.sc-card__body');
-          if (bodyEl) bodyEl.style.background = 'linear-gradient(180deg, ' + tint + ',0.03) 0%, ' + tint + ',0.08) 100%)';
+        // 3. Extract real dominant color from the portfolio screenshot
+        var previewImg = card.querySelector('.sc-card__preview-img');
+        if (previewImg) {
+          var applyColor = function(color) {
+            var tint = 'rgba(' + color.r + ',' + color.g + ',' + color.b;
+            card.style.background = 'linear-gradient(135deg, ' + tint + ',0.07) 0%, ' + tint + ',0.02) 100%)';
+            card.style.borderColor = tint + ',0.2)';
+            var namebar = card.querySelector('.sc-card__namebar');
+            if (namebar) namebar.style.background = 'rgba(' + color.r + ',' + color.g + ',' + color.b + ',0.85)';
+            previewImg.style.background = 'linear-gradient(135deg, rgba(' + color.r + ',' + color.g + ',' + color.b + ',0.08) 0%, rgba(' + color.r + ',' + color.g + ',' + color.b + ',0.03) 100%)';
+          };
+
+          // Use weserv.nl proxy to load a small CORS-safe copy
+          var proxyUrl = 'https://images.weserv.nl/?url=' + encodeURIComponent(thumbUrl) + '&w=64&h=40&fit=cover';
+          var probeImg = new Image();
+          probeImg.crossOrigin = 'anonymous';
+          probeImg.onload = function() {
+            try {
+              var canvas = document.createElement('canvas');
+              var ctx = canvas.getContext('2d');
+              canvas.width = 64;
+              canvas.height = 40;
+              ctx.drawImage(probeImg, 0, 0, 64, 40);
+              var data = ctx.getImageData(0, 0, 64, 40).data;
+              var r = 0, g = 0, b = 0, count = 0;
+              for (var i = 0; i < data.length; i += 16) {
+                if (data[i] + data[i+1] + data[i+2] > 700) continue; // skip near-white
+                if (data[i] + data[i+1] + data[i+2] < 40) continue;  // skip near-black
+                r += data[i]; g += data[i+1]; b += data[i+2]; count++;
+              }
+              if (count > 10) {
+                applyColor({ r: Math.round(r/count), g: Math.round(g/count), b: Math.round(b/count) });
+              }
+            } catch(e) { /* CORS blocked — no color applied */ }
+          };
+          probeImg.src = proxyUrl;
         }
 
         return card;
