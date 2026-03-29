@@ -526,11 +526,15 @@
 }
 
 .sc-skeleton__namebar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px;
-  background: linear-gradient(90deg, #e4e4e4 25%, #d8d8d8 50%, #e4e4e4 75%);
+  padding: 12px 14px;
+  background: linear-gradient(90deg, #dcdcdc 25%, #d0d0d0 50%, #dcdcdc 75%);
   background-size: 200% 100%;
   animation: sc-shimmer 1.5s infinite;
 }
@@ -539,7 +543,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.35);
   flex-shrink: 0;
 }
 
@@ -547,7 +551,7 @@
   height: 12px;
   width: 55%;
   border-radius: 4px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.35);
 }
 
 @keyframes sc-shimmer {
