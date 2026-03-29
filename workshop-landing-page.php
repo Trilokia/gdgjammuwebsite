@@ -409,8 +409,7 @@
               </svg>
               Submit Your Portfolio
             </a>
-            <a href="./showcase.php" class="ws-badge-cta__btn"
-              style="background:transparent; border:2px solid var(--link-color); color:var(--link-color);">
+            <a href="./showcase.php" class="ws-badge-cta__btn">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
                 style="vertical-align:middle; margin-right:6px;">
                 <path

@@ -196,7 +196,8 @@
 
       if (FORM_URL) {
         document.getElementById('submitCta').href = FORM_URL;
-        document.getElementById('submitCtaBottom').href = FORM_URL;
+        var ctaBottom = document.getElementById('submitCtaBottom');
+        if (ctaBottom) ctaBottom.href = FORM_URL;
       }
 
       let entries = [];
