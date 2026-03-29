@@ -408,10 +408,9 @@
           sk.className = 'sc-skeleton';
           sk.innerHTML =
             '<div class="sc-skeleton__preview"></div>' +
-            '<div class="sc-skeleton__body">' +
-              '<div class="sc-skeleton__line sc-skeleton__line--medium"></div>' +
-              '<div class="sc-skeleton__line sc-skeleton__line--short"></div>' +
-              '<div class="sc-skeleton__line sc-skeleton__line--chips"></div>' +
+            '<div class="sc-skeleton__namebar">' +
+              '<div class="sc-skeleton__avatar"></div>' +
+              '<div class="sc-skeleton__name"></div>' +
             '</div>';
           grid.appendChild(sk);
         }
