@@ -72,8 +72,8 @@
             <div class="bwai-promo__badge">🚀 Workshop Live</div>
             <h2 class="bwai-promo__title">Build with AI</h2>
             <p class="bwai-promo__desc">
-              Create your developer portfolio using Google Stitch &amp; Antigravity IDE — deploy it live at University
-              of Jammu.
+              Create your personal developer portfolio using Google Stitch and Antigravity IDE and deploy it live. No
+              prior AI experience needed.
             </p>
             <div class="bwai-promo__actions">
               <a class="bwai-promo__btn bwai-promo__btn--primary" href="https://buildwithai.gdgjammu.com">

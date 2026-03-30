@@ -57,7 +57,7 @@
             Build with AI Workshop
           </h3>
           <p class="hero-text-body">
-            Create your personal developer portfolio using Google Stitch and Antigravity IDE — and deploy it live. No
+            Create your personal developer portfolio using Google Stitch and Antigravity IDE and deploy it live. No
             prior AI experience needed.
           </p>
           <a class="hero-text-button" href="#setup">Get Started</a>
