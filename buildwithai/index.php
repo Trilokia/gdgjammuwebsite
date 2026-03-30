@@ -430,7 +430,7 @@
         <div class="ws-sec__label">Resources</div>
         <h2 class="ws-sec__title">Keep learning</h2>
         <div class="ws-learn-grid">
-          <a href="https://stitch.google" target="_blank" class="ws-learn-item"
+          <a href="https://stitch.withgoogle.com/" target="_blank" class="ws-learn-item"
             style="text-decoration:none; color:inherit;">
             <div class="ws-learn-item__title" style="color:var(--link-color)">Stitch Docs</div>
             <div class="ws-learn-item__desc">Official Google Stitch documentation and guides.</div>

@@ -1,6 +1,6 @@
 function redirectToHomePage() {
     // Change the window location to the desired URL
-    window.location.href = "index.php";
+    window.location.href = "https://gdgjammu.com/index.php";
 }
 function redirectToDevfest22() {
     // Change the window location to the desired URL
@@ -16,15 +16,15 @@ function redirectToWomenTechmaker() {
 }
 function redirectToCommunity() {
     // Change the window location to the desired URL
-    window.location.href = "community.php";
+    window.location.href = "https://gdgjammu.com/community.php";
 }
 function redirectToCollaboration() {
     // Change the window location to the desired URL
-    window.location.href = "collaboration.php";
+    window.location.href = "https://gdgjammu.com/collaboration.php";
 }
 function redirectToRecent() {
     // Change the window location to the desired URL
-    window.location.href = "recent.php";
+    window.location.href = "https://gdgjammu.com/recent.php";
 }
 function redirectToTeam() {
     // Change the window location to the desired URL

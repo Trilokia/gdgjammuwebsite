@@ -4,7 +4,7 @@
         <span></span>
       </label>
 
-      <a class="nav-logo-link" href="#"
+      <a class="nav-logo-link" href="<?php echo isset($base_url) ? $base_url : ''; ?>/index.php"
         ><img
           class="nav-logo"
           src="<?php echo isset($base_url) ? $base_url . '/' : ''; ?>images/gdg-jammu.png"
