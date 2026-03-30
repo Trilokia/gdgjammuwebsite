@@ -276,10 +276,27 @@
         }).filter(e => e.name && e.url);
       }
 
-      // ----------  Derive GitHub username  ----------
+      // ----------  Derive GitHub username & repo  ----------
       function getUsername(url) {
         try { return new URL(url).hostname.split('.')[0]; }
         catch (e) { return ''; }
+      }
+
+      function getRepoUrl(url) {
+        try {
+          var parsed = new URL(url);
+          var username = parsed.hostname.split('.')[0];
+          // Extract repo name from pathname (e.g. /build-with-ai-portfolio/ → build-with-ai-portfolio)
+          var pathParts = parsed.pathname.split('/').filter(function (p) { return p.length > 0; });
+          if (pathParts.length > 0) {
+            // Project page: https://user.github.io/repo-name/
+            return 'https://github.com/' + username + '/' + pathParts[0];
+          }
+          // Root site: https://user.github.io/
+          return 'https://github.com/' + username + '/' + username + '.github.io';
+        } catch (e) {
+          return '#';
+        }
       }
 
       // ----------  Build a card  ----------
@@ -287,9 +304,7 @@
         const username = getUsername(entry.url);
         const initials = entry.name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
         const avatarUrl = username ? 'https://github.com/' + username + '.png?size=72' : '';
-        const repoUrl = username
-          ? 'https://github.com/' + username + '/' + username + '.github.io'
-          : '#';
+        const repoUrl = username ? getRepoUrl(entry.url) : '#';
 
         const thumbUrl = 'https://v1.screenshot.11ty.dev/' + encodeURIComponent(entry.url) + '/opengraph/';
 
