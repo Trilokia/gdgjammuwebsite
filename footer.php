@@ -169,7 +169,7 @@
           >
             <img
               class="secondary-footer-logo"
-              src="images/gdg-jammu.png"
+              src="<?php echo isset($base_url) ? $base_url . '/' : ''; ?>images/gdg-jammu.png"
               alt="Google Developers logo"
             />
           </a>

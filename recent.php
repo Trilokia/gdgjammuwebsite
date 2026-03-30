@@ -73,7 +73,7 @@ include 'header.php';
   #BuildWithAI</a>
 </div><br>
                 
-                  <a class="hero-text-button" href="workshop-landing-page.php">Live Now</a>
+                  <a class="hero-text-button" href="https://buildwithai.gdgjammu.com">Live Now</a>
                   </div>
                 </div>
                

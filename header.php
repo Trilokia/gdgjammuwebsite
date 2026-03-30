@@ -7,7 +7,7 @@
       <a class="nav-logo-link" href="#"
         ><img
           class="nav-logo"
-          src="images/gdg-jammu.png"
+          src="<?php echo isset($base_url) ? $base_url . '/' : ''; ?>images/gdg-jammu.png"
           alt="Google Developers logo"
       /></a>
 
