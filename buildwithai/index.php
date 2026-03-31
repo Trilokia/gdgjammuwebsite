@@ -203,14 +203,7 @@
                 rel="noopener">Claim credits</a>
             </div>
           </div>
-          <div class="ws-check-item" onclick="this.classList.toggle('done')">
-            <div class="ws-check-box"></div>
-            <div class="ws-check-info">
-              <strong>Install Google Chrome</strong>
-              <span>Recommended browser for best compatibility — </span>
-              <a href="https://google.com/chrome" target="_blank" rel="noopener">google.com/chrome</a>
-            </div>
-          </div>
+
         </div>
 
         <p class="ws-note">
@@ -234,6 +227,13 @@
             <div class="ws-qr-card__link">github.com/GDG-Jammu/build-with-ai-portfolio</div>
             <a href="https://github.com/GDG-Jammu/build-with-ai-portfolio" target="_blank"
               class="ws-qr-card__btn ws-qr-card__btn--primary">Fork Repository</a>
+          </div>
+
+          <div class="ws-qr-card">
+            <div class="ws-qr-card__label" style="color:var(--g-red)">Google Stitch</div>
+            <div class="ws-qr-card__code" id="qr-stitch"></div>
+            <div class="ws-qr-card__link">stitch.withgoogle.com</div>
+            <a href="https://stitch.withgoogle.com/" target="_blank" class="ws-qr-card__btn">Open Stitch</a>
           </div>
 
           <div class="ws-qr-card">
@@ -483,6 +483,7 @@
     const qrOpts = { width: 140, height: 140, colorDark: '#202124', colorLight: '#fff', correctLevel: QRCode.CorrectLevel.M };
 
     new QRCode(document.getElementById('qr-repo'), { ...qrOpts, text: 'https://github.com/GDG-Jammu/build-with-ai-portfolio' });
+    new QRCode(document.getElementById('qr-stitch'), { ...qrOpts, text: 'https://stitch.withgoogle.com/' });
     new QRCode(document.getElementById('qr-antigravity'), { ...qrOpts, text: 'https://antigravity.google/download' });
     new QRCode(document.getElementById('qr-credits'), { ...qrOpts, text: 'https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd' });
     new QRCode(document.getElementById('qr-badge'), { ...qrOpts, text: 'http://goo.gle/bwai-attendee-2026' });
