@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/workshop.css" />
+  <link rel="stylesheet" href="https://gdgjammu.com/css/style.css" />
+  <link rel="stylesheet" href="https://gdgjammu.com/css/workshop.css" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="https://gdgjammu.com/images/favicon/apple-icon-57x57.png">
@@ -30,7 +30,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://gdgjammu.com/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="https://gdgjammu.com/images/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://gdgjammu.com/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="https://gdgjammu.com/images/favicon/manifest.json">
+  <!-- manifest omitted: cross-origin from buildwithai subdomain causes CORS errors -->
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="https://gdgjammu.com/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -486,7 +486,7 @@
   include '../footer.php';
   ?>
 
-  <script src="/functions.js"></script>
+  <script src="https://gdgjammu.com/functions.js"></script>
 
   <script>
     // Scroll reveal
