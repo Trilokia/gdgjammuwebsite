@@ -660,6 +660,144 @@ main section.hero {
   margin-top: 20px;
 }
 
+/* ── YOUTUBE PLAYER + MINI PLAYER ── */
+.yt-player-sentinel {
+  position: relative;
+  width: 100%;
+}
+
+.yt-player-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.yt-player-inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.yt-player-inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Mini-player controls (hidden by default) */
+.yt-mini-close,
+.yt-mini-expand {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.yt-mini-close {
+  top: -8px;
+  right: -8px;
+  background: #EA4335;
+  color: white;
+  box-shadow: 0 2px 8px rgba(234, 67, 53, 0.4);
+}
+
+.yt-mini-close:hover {
+  background: #d33426;
+  transform: scale(1.15);
+}
+
+.yt-mini-expand {
+  top: -8px;
+  left: -8px;
+  background: var(--g-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.4);
+}
+
+.yt-mini-expand:hover {
+  background: #3367d6;
+  transform: scale(1.15);
+}
+
+/* ── MINI-PLAYER STATE ── */
+.yt-player-wrapper.yt-mini {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 360px;
+  border-radius: 12px;
+  z-index: 9999;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: ytMiniSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.yt-player-wrapper.yt-mini .yt-mini-close,
+.yt-player-wrapper.yt-mini .yt-mini-expand {
+  display: flex;
+}
+
+/* Mini-player label */
+.yt-player-wrapper.yt-mini::after {
+  content: '📺 Workshop Video';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 12px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* Draggable hover hint */
+.yt-player-wrapper.yt-mini:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes ytMiniSlideIn {
+  from {
+    top: var(--yt-from-top, 0px);
+    left: var(--yt-from-left, auto);
+    right: auto;
+    bottom: auto;
+    width: var(--yt-from-width, 100%);
+    opacity: 0.7;
+  }
+  to {
+    top: auto;
+    left: auto;
+    right: 24px;
+    bottom: 24px;
+    width: 360px;
+    opacity: 1;
+  }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .ws-tools {
@@ -685,5 +823,12 @@ main section.hero {
 
   .ws-badge-cta {
     padding: 32px 24px;
+  }
+
+  /* Smaller mini-player on mobile */
+  .yt-player-wrapper.yt-mini {
+    width: 260px;
+    bottom: 16px;
+    right: 12px;
   }
 }

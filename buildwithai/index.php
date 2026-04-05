@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://gdgjammu.com/css/style.css" />
-  <link rel="stylesheet" href="https://gdgjammu.com/css/workshop.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/workshop.css" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="https://gdgjammu.com/images/favicon/apple-icon-57x57.png">
@@ -63,10 +63,26 @@
           <a class="hero-text-button" href="#setup">Get Started</a>
         </div>
         <div class="hero-img">
-          <video autoplay muted loop playsinline
-            style="margin-left:auto; margin-right:auto; max-width:100%; border-radius:12px;">
-            <source src="https://gdgjammu.com/BWAI26_Intro.mp4" type="video/mp4">
-          </video>
+          <div class="yt-player-sentinel" id="ytPlayerSentinel">
+            <div class="yt-player-wrapper" id="ytPlayerWrapper">
+              <div class="yt-player-inner">
+                <iframe
+                  id="ytPlayerIframe"
+                  src="https://www.youtube.com/embed/T3BJelYKjwE?rel=0&modestbranding=1&playsinline=1"
+                  title="Build with AI Workshop — Introduction"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <button class="yt-mini-close" id="ytMiniClose" title="Close mini player" aria-label="Close mini player">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+              <button class="yt-mini-expand" id="ytMiniExpand" title="Back to full size" aria-label="Scroll back to video">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 5h2v2H5zm0 4h2v2H5zm0 4h2v2H5zm0 4h2v2H5zm4-12h10v2H9zm0 4h10v2H9zm0 4h10v2H9zm0 4h10v2H9z"/></svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -470,7 +486,7 @@
   include '../footer.php';
   ?>
 
-  <script src="https://gdgjammu.com/functions.js"></script>
+  <script src="/functions.js"></script>
 
   <script>
     // Scroll reveal
@@ -487,6 +503,86 @@
     new QRCode(document.getElementById('qr-antigravity'), { ...qrOpts, text: 'https://antigravity.google/download' });
     new QRCode(document.getElementById('qr-credits'), { ...qrOpts, text: 'https://trygcp.dev/claim/design-to-code-with-antigravity-and-stitch-mcp#vf=6qd' });
     new QRCode(document.getElementById('qr-badge'), { ...qrOpts, text: 'http://goo.gle/bwai-attendee-2026' });
+  </script>
+
+  <!-- Mini-player scroll logic -->
+  <script>
+    (() => {
+      const sentinel = document.getElementById('ytPlayerSentinel');
+      const wrapper  = document.getElementById('ytPlayerWrapper');
+      const closeBtn = document.getElementById('ytMiniClose');
+      const expandBtn = document.getElementById('ytMiniExpand');
+
+      let miniDismissed = false;
+      let isMini = false;
+      let lastKnownRect = null;
+
+      // Continuously track the sentinel's position while it's visible
+      function trackPosition() {
+        const rect = sentinel.getBoundingClientRect();
+        if (rect.bottom > 0) {
+          lastKnownRect = {
+            top: rect.top,
+            left: rect.left,
+            width: rect.width
+          };
+        }
+      }
+
+      function checkScroll() {
+        if (miniDismissed) return;
+        trackPosition();
+
+        const rect = sentinel.getBoundingClientRect();
+        const shouldMini = rect.bottom < 0;
+
+        if (shouldMini && !isMini) {
+          // Set the starting position from the video's last known location
+          if (lastKnownRect) {
+            wrapper.style.setProperty('--yt-from-top', lastKnownRect.top + 'px');
+            wrapper.style.setProperty('--yt-from-left', lastKnownRect.left + 'px');
+            wrapper.style.setProperty('--yt-from-width', lastKnownRect.width + 'px');
+          }
+          // Reset animation by removing and re-adding class
+          wrapper.classList.remove('yt-mini');
+          void wrapper.offsetWidth; // force reflow
+          wrapper.classList.add('yt-mini');
+          isMini = true;
+        } else if (!shouldMini && isMini) {
+          wrapper.classList.remove('yt-mini');
+          isMini = false;
+        }
+      }
+
+      // Close mini-player
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        wrapper.classList.remove('yt-mini');
+        miniDismissed = true;
+        isMini = false;
+      });
+
+      // Scroll back to video (expand)
+      expandBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        wrapper.classList.remove('yt-mini');
+        isMini = false;
+        sentinel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      // Re-enable mini-player if user scrolls back up to the video
+      const reEnableObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && miniDismissed) {
+            miniDismissed = false;
+          }
+        });
+      }, { threshold: 0.5 });
+      reEnableObs.observe(sentinel);
+
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      checkScroll();
+    })();
   </script>
 
 </body>
